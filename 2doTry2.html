@@ -1,10 +1,44 @@
-<html>
+<!--user has to input a string(text) , add a 'to-do, and iinsert the item into the List'-->
+<!--
+    need to make decisions, break it down into "events":
+    1. Add <li></li> or 
+    2. Add an Array (store internally in javascript, keep a list); 
+    var toDo (<li)
+    store the information in the DOM
+    3. Toggle Check box
+    4. change status of item; srikethrough, or 
+    5. option to Remove/HIDE an item (an item is a "toDo TASK")
+    6. double-click to Edit an item
+    7. Update status to be "current and log the number of items, and total completed items"
+    8. filterOnstatus (hide class/display)
+    9. Star your 'Favorites', Share the list, drag and drop a priority list. do NOT use icons!!
+-->
+    
+    
+
+    
+    
+    <html>
     <head>
-        <link href="css/styles_todos.css" type="text/css" rel="stylesheet">
+        <link href="css/2doTry2.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+                <script type="text/javascript" src="js/2doTry2.js"></script>
         <title>try 2 todo list </title>
     </head> 
     <body>
             <h1>todos</h1>
+            
+            <div id= "Mainbox">
+            
+            <input id="inputId1" type="text" class="todoInputtext" placeholder="Want to get something done? Just TYPE IT HERE"/>
+            
+            <div class="somethingtoDo"> 
+            
+            <input type="checkbox" class="checkmark">
+            <label type="text" class="labelText"></label>
+            <button></button>
+            
+            </div>
 
         
         
@@ -45,30 +79,7 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     
 </html>
