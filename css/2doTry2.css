@@ -40,9 +40,12 @@ h1 {
     position: center;
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 1.8 em;
 }
 .todoInputtext {
+}
+.labelText {
+    font-size: 1.8 em;
+    font-family: sans-serif;
 }
 .close {
     width: 25;
