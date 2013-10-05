@@ -7,3 +7,20 @@ var nextItem = '<div class="somethingtoDo"><input type="checkbox" maxlength="40"
 function handleEvent1() {
     $("#Mainbox").append(nextItem);
 }
+
+function getSomethingdone() {
+    $(".somethingtoDo").val("");
+} 
+
+function getSomethingdone() {
+    $(label).val("");
+} 
+
+function getSomethingdone() {
+    $("#Mainbox").val("");
+} 
+
+function getSomethingdone() {
+    $(".todoInputtext").val("");
+} 
+
