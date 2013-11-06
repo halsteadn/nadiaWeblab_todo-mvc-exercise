@@ -1,7 +1,5 @@
 <!--user has to input a string(text) , add a 'to-do, and iinsert the item into the List'-->
-<!--
-    need to make decisions, break it down into "events":
-    1. Add <li></li> or 
+<!-- need to make decisions, break it down into "events": 1. Add <li></li> or 
     2. Add an Array (store internally in javascript, keep a list); 
     var toDo (<li)
     store the information in the DOM
@@ -13,74 +11,59 @@
     8. filterOnstatus (hide class/display)
     9. Star your 'Favorites', Share the list, drag and drop a priority list. do NOT use icons!!
 -->
+<!-- <div class=t emplate hide bogus something-else wide></div>  -->
+<!--want to trigger this using a CSS CLASS "Complete". let css do the work for me using".toggle" and just toggle the class -->
+<!-- <div .toDoitem>
+        <span .toggle></span>
+        <label></label>      
+</div> 
+-->
+<html>
     
-    
-
-    
-    
-    <html>
     <head>
         <link href="css/2doTry2.css" type="text/css" rel="stylesheet">
-        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-                <script type="text/javascript" src="js/2doTry2.js"></script>
-        <title>try 2 todo list </title>
-    </head> 
+<!--        <link href="css/bootstrap_hack.css" type="text/css" rel="stylesheet">-->
+        <title>try 2 todo list</title>
+    </head>
+    
     <body>
-            <h1>todos</h1>
-            
-            <div id= "Mainbox">
-            
-            <input id="inputId1" type="text" class="todoInputtext" placeholder="Want to get something done? Just TYPE IT HERE"/>
-            
-            <div class="somethingtoDo"> 
-            
+        <h1>todos</h1>
+        <div id="Mainbox">
+            <input id="inputId1" type="text" class="todoInputtext" placeholder="Want needs to be done?" />
+            <div class="somethingtoDo">
                 <input type="checkbox" checked="checked" class="checkmark" data-toggle="buttons-checkbox">
-                <span>"Uh, you just can't Git there from here..."</span>
-                <label type="text" class="labelText" maxlength="40"></label>
-                <button class="close">&times;</button>
-            
+                <span class="toggle">Uh, you just can't Git there from here...</span>
+                <label type="text" class="labelText-complete" maxlength="40">Already did this.</label>
+                <!-- <button class="close">&times;</button>-->
+                <button class="close">&#171;</button>
             </div>
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+<!--
+            <div class="input-group">
+                <span class="input-group-addon">&#10003;</span>
+                <input type="text" class="form-control">
+                <span class="input-group-addon">&times;</span>
+            </div>
+-->
+            <div class="wrapper">
+        </div>
+              <h3>Here's a few ways to dispose of your todo list:</h3>
+              <div class="btn-group">
+  <button type="button" class="btn btn-default">Burn</button>
+  <button type="button" class="btn btn-default">Shred</button>
+  <button type="button" class="btn btn-default">Crumple</button>
+  <button type="button" class="btn btn-default">Flush</button>
+  <button type="button" class="btn btn-default">Recycle</button>
+</div>
+        <div class="footerFilter">
+<!--            <div class="statusAllActiveComplete">-->
+                <a href="a" class="showAll">ALL</a>
+                <a href="a" class="showActive">ACTIVE</a>
+                <a href="a" class="to-doComplete">COMPLETE</a>
+            </div>
+            </div>
+<!--        </div>-->
+<!--        <script type="text/javascript" src="js/jquery-1.10.2.js"></script>-->
+        <script type="text/javascript" src="js/todotoTry2.js"></script>
     </body>
-    
-    
-    
-    
-    
-    
-    
 
-    
-    
 </html>
